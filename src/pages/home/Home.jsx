@@ -1,6 +1,7 @@
 import "./home.scss";
 import heroImg from "../../assets/home.png";
 import { motion } from "framer-motion";
+import resume from "../../assets/DSresume.pdf";
 
 const Home = () => {
   return (
@@ -24,7 +25,7 @@ const Home = () => {
           <a href="/projects">
             <button className="work">View Work</button>
           </a>
-          <a href="/resume">
+          <a href={resume}>
             <button className="cont">Resume</button>
           </a>
         </motion.div>
