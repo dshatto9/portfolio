@@ -1,0 +1,151 @@
+@import "../../responsive.scss";
+
+.card {
+  display: inline-block;
+  padding: 20%;
+  top: 100px;
+  border: 1px solid black;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  box-shadow: 5px 5px black;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: all 250ms ease;
+  }
+
+  @include sm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+    box-shadow: none;
+  }
+
+  .imgProject {
+    position: absolute;
+    object-fit: cover;
+    width: 300px;
+    height: 170px;
+    right: 48px;
+    top: 45px;
+    border: 1px solid black;
+
+    @include md {
+      width: 200px;
+      top: 35px;
+      left: 100px;
+    }
+
+    @include sm {
+      width: 300px;
+      top: 45px;
+      left: 50px;
+    }
+  }
+
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titleCard {
+    font-size: 24px;
+    position: absolute;
+    top: 235px;
+    white-space: nowrap;
+
+    @include md {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+  }
+
+  .btn_demo {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 70px;
+    left: 70px;
+    padding: 10px 20px;
+    width: 120px;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 2px 2px black;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+  }
+  .btn_code {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    bottom: 70px;
+    left: 200px;
+    padding: 10px 20px;
+    width: 120px;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: 2px 2px black;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn_code,
+  .btn_demo {
+    border: 1px solid white;
+    box-shadow: 2px 2px black;
+    font-family: inherit;
+    z-index: 1;
+
+    @include md {
+      bottom: 90px;
+    }
+
+    @include sm {
+      bottom: 70px;
+    }
+  }
+
+  .stacks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 25px;
+    left: 110px;
+    gap: 10px;
+
+    @include md {
+      font-size: 14px;
+      position: absolute;
+      bottom: 40px;
+      left: 120px;
+    }
+  }
+
+  .stack1,
+  .stack2,
+  .stack3 {
+    background-color: black;
+    color: white;
+  }
+}

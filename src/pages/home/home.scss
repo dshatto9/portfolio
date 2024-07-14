@@ -1,0 +1,139 @@
+@import "../../responsive.scss";
+
+.home {
+  overflow: hidden;
+  height: 100vh;
+  max-width: 1366px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textContainer {
+  flex: 3;
+  position: relative;
+
+  .wrapper {
+    display: flex;
+    padding-right: 100px;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    gap: 50px;
+    position: absolute;
+
+    .title {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 90px;
+      position: absolute;
+      top: 280px;
+      left: 25px;
+      font-family: "Archivo Black";
+
+      @include md {
+        font-size: 42px;
+        top: 175px;
+        left: 15px;
+      }
+
+      @include sm {
+        font-size: 36px;
+        top: 160px;
+        left: 15px;
+        z-index: -1;
+      }
+    }
+    p {
+      position: absolute;
+      font-size: 32px;
+      font-weight: 300;
+      top: 380px;
+      right: 70px;
+
+      @include md {
+        font-size: 20px;
+        top: 225px;
+        left: 30px;
+      }
+
+      @include sm {
+        top: 205px;
+        font-size: 16px;
+        white-space: nowrap;
+        left: 45px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .work,
+  .cont {
+    position: absolute;
+    top: 432px;
+    left: 450px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    width: 120px;
+    background-color: black;
+    border: none;
+    border: 1px solid white;
+    box-shadow: 2px 2px black;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+
+    @include md {
+      top: 265px;
+      left: 155px;
+    }
+
+    @include sm {
+      left: 135px;
+      top: 236px;
+      width: 115px;
+    }
+  }
+  .cont {
+    left: 320px;
+
+    @include md {
+      left: 25px;
+    }
+
+    @include sm {
+      left: 15px;
+    }
+  }
+}
+
+.imgContainer {
+  flex: 2;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+
+  img {
+    min-height: 863px;
+    width: 80%;
+    position: absolute;
+    left: 275px;
+    z-index: -1;
+
+    @include md {
+      width: 100%;
+      left: 0px;
+    }
+    @include sm {
+      // display: none;
+      z-index: -999;
+      width: 550px;
+    }
+  }
+}
