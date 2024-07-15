@@ -13,6 +13,10 @@
   &:hover {
     transform: scale(1.1);
     transition: all 250ms ease;
+
+    @include sm {
+      transform: none;
+    }
   }
 
   @include sm {
@@ -55,7 +59,7 @@
   .titleCard {
     font-size: 24px;
     position: absolute;
-    top: 235px;
+    top: 230px;
     white-space: nowrap;
 
     @include md {
@@ -63,6 +67,20 @@
       align-items: center;
       justify-content: center;
       font-size: 24px;
+    }
+  }
+
+  .cardDesc {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    bottom: 92px;
+    padding: 20px 0px;
+
+    @include sm {
+      bottom: 95px;
     }
   }
 
@@ -76,7 +94,7 @@
     color: white;
     font-size: 16px;
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     left: 70px;
     padding: 10px 20px;
     width: 120px;
@@ -97,7 +115,7 @@
     color: white;
     font-size: 16px;
     position: absolute;
-    bottom: 70px;
+    bottom: 65px;
     left: 200px;
     padding: 10px 20px;
     width: 120px;
@@ -132,13 +150,18 @@
     position: absolute;
     bottom: 25px;
     left: 110px;
-    gap: 10px;
+    gap: 9px;
 
     @include md {
       font-size: 14px;
       position: absolute;
       bottom: 40px;
       left: 120px;
+    }
+
+    @include sm {
+      left: 110px;
+      bottom: 30px;
     }
   }
 

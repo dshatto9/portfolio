@@ -3,6 +3,7 @@ import "./card.scss";
 export const Card = ({
   imgSrc,
   title,
+  desc,
   stack1,
   stack2,
   stack3,
@@ -15,6 +16,7 @@ export const Card = ({
         <img className="imgProject" src={imgSrc} alt="card img" />
         <div className="title-container">
           <h2 className="titleCard">{title}</h2>
+          <p className="cardDesc">{desc}</p>
         </div>
         <a href={deploy} target="_blank">
           <button className="btn_demo">Demo</button>

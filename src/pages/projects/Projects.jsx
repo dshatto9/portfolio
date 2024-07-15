@@ -26,6 +26,7 @@ const Projects = () => {
         <Card
           imgSrc={glitter}
           title="Glitterdoom | E-commerce"
+          desc="E-commerce site for an Etsy seller."
           deploy="https://glitterdoom.vercel.app/"
           github="https://github.com/dshatto9/glitterdoom"
           stack1="React"
@@ -35,6 +36,7 @@ const Projects = () => {
         <Card
           imgSrc={shiver}
           title="Shiver | Horror Streaming"
+          desc="Streaming site specialized in horror."
           deploy="https://shiver-rho.vercel.app/"
           github="https://github.com/dshatto9/shiver"
           stack1="React"
@@ -44,6 +46,7 @@ const Projects = () => {
         <Card
           imgSrc="https://files.tecnoblog.net/wp-content/uploads/2021/12/melhor-streaming-2021-netflix-1.jpg"
           title="Netflix Clone"
+          desc="A replica of Netflix with userAuth."
           deploy="https://stalwart-faun-50562d.netlify.app/"
           github="https://github.com/dshatto9/netflix-clone"
           stack1="React"
